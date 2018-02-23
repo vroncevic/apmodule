@@ -67,7 +67,7 @@ TOOL_NOTIFY="false"
 # PNAME="rcp"
 # __apmodule "${PNAME}"
 #
-function __apmodule() {
+function __apmodule {
     local PNAME=$1
     if [ -n "${PNAME}" ]; then
         local FUNC=${FUNCNAME[0]} MSG="None"
