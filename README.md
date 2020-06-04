@@ -1,8 +1,8 @@
 # Generator - Apache Module.
 
-apmodule is shell tool for generating Apache Module.
+***apmodule*** is shell tool for generating Apache Module.
 
-Developed in bash code: 100%.
+Developed in bash code: ***100%***.
 
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
@@ -10,6 +10,17 @@ other information that should be provided before the tool is installed.
 
 [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/apmodule.svg)](https://github.com/vroncevic/apmodule/issues)
  [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/apmodule.svg)](https://github.com/vroncevic/apmodule/graphs/contributors)
+
+<!-- START doctoc -->
+**Table of Contents**
+
+- [Installation](https://github.com/vroncevic/apmodule#installation)
+- [Usage](https://github.com/vroncevic/apmodule#usage)
+- [Dependencies](https://github.com/vroncevic/apmodule#dependencies)
+- [Shell tool structure](https://github.com/vroncevic/apmodule#shell-tool-structure)
+- [Docs](https://github.com/vroncevic/apmodule#docs)
+- [Copyright and Licence](https://github.com/vroncevic/apmodule#copyright-and-licence)
+<!-- END doctoc -->
 
 ### INSTALLATION
 
@@ -50,7 +61,7 @@ This tool requires these other modules and libraries:
 
 ### SHELL TOOL STRUCTURE
 
-apmodule is based on MOP.
+***apmodule*** is based on MOP.
 
 Shell tool structure:
 ```
