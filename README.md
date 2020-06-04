@@ -25,9 +25,9 @@ cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.1.0/
 cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.1.0/
 ```
 
-Or You can use docker to create image/container.
+![alt tag](https://raw.githubusercontent.com/vroncevic/apmodule/dev/docs/setup_tree.png)
 
-:sparkles:
+Or You can use docker to create image/container.
 
 ### USAGE
 
@@ -72,8 +72,6 @@ More documentation and info at:
 
 * https://apmodule.readthedocs.io/en/latest/
 
-:sparkles:
-
 ### COPYRIGHT AND LICENCE
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -84,6 +82,4 @@ Copyright (C) 2018 by https://vroncevic.github.io/apmodule
 This tool is free software; you can redistribute it and/or modify
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
-
-:sparkles:
 

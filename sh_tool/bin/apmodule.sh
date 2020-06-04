@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generating Apache Module Project
-# @version ver.1.0
+# @version ver.1.0.0
 # @date    Wed Feb 22 09:15:40 CET 2017
 # @company None, free software to use 2017
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -30,7 +30,7 @@ APMODULE_LOG=${APMODULE_HOME}/log
 
 declare -A APMODULE_USAGE=(
     [USAGE_TOOL]="${APMODULE_TOOL}"
-    [USAGE_ARG1]="[Project Name] Projet name (apache module)"
+    [USAGE_ARG1]="[Project Name] Project name (apache module)"
     [USAGE_EX_PRE]="# Example creating module rcp"
     [USAGE_EX]="${APMODULE_TOOL} rcp"
 )
