@@ -15,7 +15,15 @@
 
 FROM debian:10
 RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends apache2-dev tree htop wget unzip ca-certificates openssl
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
+ tree \
+ htop \
+ wget \
+ unzip \
+ ca-certificates \
+ openssl \
+ apache2-dev
+
 RUN wget https://github.com/vroncevic/sh_util/archive/v1.0.0.zip
 RUN unzip v1.0.0.zip
 RUN find /sh_util-1.0.0/ -name "*.editorconfig" -type f -exec rm -Rf {} \;
@@ -32,6 +40,7 @@ RUN mkdir /root/bin/
 RUN cp -R /sh_tool/bin/   /root/scripts/apmodule/ver.1.0/
 RUN cp -R /sh_tool/conf/  /root/scripts/apmodule/ver.1.0/
 RUN cp -R /sh_tool/log/   /root/scripts/apmodule/ver.1.0/
+RUN rm -Rf /sh_tool/
 RUN chmod -R 755 /root/scripts/apmodule/ver.1.0/
 RUN ln -s /root/scripts/apmodule/ver.1.0/bin/apmodule.sh /root/bin/apmodule
 RUN tree /root/scripts/apmodule/ver.1.0/
