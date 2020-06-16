@@ -56,7 +56,6 @@ apmodule rcp
 ### DEPENDENCIES
 
 **apmodule** requires next modules and libraries:
-
 * sh_util [https://github.com/vroncevic/sh_util](https://github.com/vroncevic/sh_util)
 
 ### SHELL TOOL STRUCTURE
@@ -80,13 +79,13 @@ Code structure:
 [![Documentation Status](https://readthedocs.org/projects/apmodule/badge/?version=latest)](https://apmodule.readthedocs.io/projects/apmodule/en/latest/?badge=latest)
 
 More documentation and info at:
-
 * [https://apmodule.readthedocs.io/en/latest/](https://apmodule.readthedocs.io/en/latest/)
+* [https://www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
+* [https://httpd.apache.org/docs/2.4/developer/modguide.html](https://httpd.apache.org/docs/2.4/developer/modguide.html)
 
 ### COPYRIGHT AND LICENCE
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-
 
 Copyright (C) 2017 by [vroncevic.github.io/apmodule](https://vroncevic.github.io/apmodule)
 
