@@ -1,8 +1,8 @@
 # Generator - Apache Module.
 
-***apmodule*** is shell tool for generating Apache Module.
+**apmodule** is shell tool for generating Apache Module.
 
-Developed in bash code: ***100%***.
+Developed in [bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) code: **100%**.
 
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
@@ -14,19 +14,19 @@ other information that should be provided before the tool is installed.
 <!-- START doctoc -->
 **Table of Contents**
 
-- [Installation](https://github.com/vroncevic/apmodule#installation)
-- [Usage](https://github.com/vroncevic/apmodule#usage)
-- [Dependencies](https://github.com/vroncevic/apmodule#dependencies)
-- [Shell tool structure](https://github.com/vroncevic/apmodule#shell-tool-structure)
-- [Docs](https://github.com/vroncevic/apmodule#docs)
-- [Copyright and Licence](https://github.com/vroncevic/apmodule#copyright-and-licence)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Dependencies](#dependencies)
+- [Shell tool structure](#shell-tool-structure)
+- [Docs](#docs)
+- [Copyright and Licence](#copyright-and-licence)
 <!-- END doctoc -->
 
 ### INSTALLATION
 
 Navigate to release [page](https://github.com/vroncevic/apmodule/releases) download and extract release archive.
 
-To install modules type the following:
+To install **apmodule** type the following:
 
 ```
 tar xvzf apmodule-x.y.z.tar.gz
@@ -43,7 +43,7 @@ Or You can use docker to create image/container.
 ### USAGE
 
 ```
-# Create symlink for shell tool
+# Create symlink for apmodule
 ln -s /root/scripts/apmodule/ver.1.0/bin/apmodule.sh /root/bin/apmodule
 
 # Setting PATH
@@ -55,15 +55,15 @@ apmodule rcp
 
 ### DEPENDENCIES
 
-This tool requires these other modules and libraries:
+**apmodule** requires next modules and libraries:
 
-* sh_util https://github.com/vroncevic/sh_util
+* sh_util [https://github.com/vroncevic/sh_util](https://github.com/vroncevic/sh_util)
 
 ### SHELL TOOL STRUCTURE
 
-***apmodule*** is based on MOP.
+**apmodule** is based on MOP.
 
-Shell tool structure:
+Code structure:
 ```
 .
 ├── bin/
@@ -81,14 +81,14 @@ Shell tool structure:
 
 More documentation and info at:
 
-* https://apmodule.readthedocs.io/en/latest/
+* [https://apmodule.readthedocs.io/en/latest/](https://apmodule.readthedocs.io/en/latest/)
 
 ### COPYRIGHT AND LICENCE
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
-Copyright (C) 2018 by https://vroncevic.github.io/apmodule
+Copyright (C) 2018 by [vroncevic.github.io/apmodule](https://vroncevic.github.io/apmodule)
 
 This tool is free software; you can redistribute it and/or modify
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
