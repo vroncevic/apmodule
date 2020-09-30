@@ -4,6 +4,8 @@
 
 Developed in **[bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))** code: **100%**.
 
+![apmodule shell checker](https://github.com/vroncevic/apmodule/workflows/apmodule%20shell%20checker/badge.svg)
+
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
 other information that should be provided before the tool is installed.
@@ -41,6 +43,8 @@ cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.1.0/
 ![alt tag](https://raw.githubusercontent.com/vroncevic/apmodule/dev/docs/setup_tree.png)
 
 Or You can use docker to create image/container.
+
+![apmodule docker checker](https://github.com/vroncevic/apmodule/workflows/apmodule%20docker%20checker/badge.svg)
 
 ### Usage
 
