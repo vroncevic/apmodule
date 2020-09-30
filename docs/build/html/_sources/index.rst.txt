@@ -8,6 +8,7 @@ Developed in `bash <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ code: **1
 |GitHub shell checker|
 
 .. |GitHub shell checker| image:: https://github.com/vroncevic/apmodule/workflows/apmodule%20shell%20checker/badge.svg
+   :target: https://github.com/vroncevic/apmodule/actions?query=workflow%3A%22apmodule+shell+checker%22
 
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
@@ -51,6 +52,7 @@ Or You can use Docker to create image/container.
 |GitHub docker checker|
 
 .. |GitHub docker checker| image:: https://github.com/vroncevic/apmodule/workflows/apmodule%20docker%20checker/badge.svg
+   :target: https://github.com/vroncevic/apmodule/actions?query=workflow%3A%22apmodule+docker+checker%22
 
 Dependencies
 -------------
