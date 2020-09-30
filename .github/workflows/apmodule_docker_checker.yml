@@ -11,9 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
+    - name: Build Docker image
+      id: docker_checker
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+        echo Building Docker image
+        build_transcript=$(docker build . --file Dockerfile --tag apmodule:latest)
+        [[ "$build_transcript" == *"Successfully"* ]] && echo ::set-output name=status::success || echo ::set-output name=status::failure
+    - name: Check on failures
+      if: steps.docker_checker.outputs.status == 'failure'
+      run: exit 1
