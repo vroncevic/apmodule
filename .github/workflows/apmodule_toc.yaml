@@ -1,4 +1,4 @@
-name: TOC Generator apmodule
+name: apmodule toc
 
 on: push
 
