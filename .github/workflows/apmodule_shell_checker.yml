@@ -1,4 +1,4 @@
-name: CI shell checker apmodule
+name: apmodule shell checker
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
       - name: Check size script
         id: size_checker
         run: |
-          echo Checking size (NOL)
+          echo Checking size
           code_line_number=$(wc -l < sh_tool/bin/apmodule.sh)
           [[ $code_line_number -gt 300 ]] && echo ::set-output name=status::failure || echo ::set-output name=status::success
       - name: Check on failures

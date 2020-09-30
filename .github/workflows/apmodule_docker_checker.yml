@@ -1,4 +1,4 @@
-name: CI docker checker apmodule
+name: apmodule docker checker
 
 on:
   push:
