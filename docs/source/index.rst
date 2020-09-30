@@ -1,12 +1,7 @@
-APMODULE
+Apmodule
 ---------
 
-.. toctree::
- :hidden:
-
- self
-
-**apmodule** is shell tool for generating Apache Module.
+**apmodule** is shell tool for generating `Apache Module <https://httpd.apache.org/docs/2.4/mod/>`_.
 
 Developed in `bash <https://en.wikipedia.org/wiki/Bash_(Unix_shell)>`_ code: **100%**.
 
@@ -25,7 +20,12 @@ other information that should be provided before the tool is installed.
 .. |Documentation Status| image:: https://readthedocs.org/projects/apmodule/badge/?version=latest
    :target: https://apmodule.readthedocs.io/projects/apmodule/en/latest/?badge=latest
 
-INSTALLATION
+.. toctree::
+    :hidden:
+
+    self
+
+Installation
 -------------
 
 Navigate to release `page`_ download and extract release archive.
@@ -42,13 +42,25 @@ To install **apmodule** type the following:
    cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.1.0/
    cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.1.0/
 
-DEPENDENCIES
+Dependencies
 -------------
 
 **apmodule** requires next modules and libraries:
     sh_util `https://github.com/vroncevic/sh_util <https://github.com/vroncevic/sh_util>`_
 
-SHELL TOOL STRUCTURE
+Usage
+------
+
+.. code-block:: bash
+
+    # Create symlink for apmodule
+    ln -s /root/scripts/apmodule/ver.1.0/bin/apmodule.sh /root/bin/apmodule
+    # Setting PATH
+    export PATH=${PATH}:/root/bin/
+    # Generate Apache Module rcp
+    apmodule rcp
+
+Shell tool structure
 ---------------------
 
 **apmodule** is based on MOP.
@@ -66,7 +78,7 @@ Code structure:
    └── log/
        └── apmodule.log
 
-COPYRIGHT AND LICENCE
+Copyright and licence
 ----------------------
 
 |License: GPL v3| |License: Apache 2.0|
@@ -79,7 +91,7 @@ COPYRIGHT AND LICENCE
 
 Copyright (C) 2017 by `vroncevic.github.io/apmodule <https://vroncevic.github.io/apmodule>`_
 
-This tool is free software; you can redistribute it and/or modify it
+**apmodule** is free software; you can redistribute it and/or modify it
 under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
 
