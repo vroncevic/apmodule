@@ -1,4 +1,4 @@
-# Generator for Template HTTP Apache Module.
+# Generator for Template HTTP Apache Module
 
 **apmodule** is shell tool for generating **[Apache Module](https://httpd.apache.org/docs/2.4/mod/)**.
 
@@ -99,3 +99,8 @@ Copyright (C) 2017 by [vroncevic.github.io/apmodule](https://vroncevic.github.io
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
 
+Lets help and support FSF.
+
+[![Free Software Foundation](https://raw.githubusercontent.com/vroncevic/apmodule/dev/docs/fsf-logo_1.png)](https://my.fsf.org/)
+
+[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://my.fsf.org/donate/)

@@ -1,4 +1,4 @@
-Apmodule
+apmodule
 ---------
 
 **apmodule** is shell tool for generating `Apache Module <https://httpd.apache.org/docs/2.4/mod/>`_.
@@ -58,7 +58,8 @@ Dependencies
 -------------
 
 **apmodule** requires next modules and libraries:
-    sh_util `https://github.com/vroncevic/sh_util <https://github.com/vroncevic/sh_util>`_
+
+* sh_util `https://github.com/vroncevic/sh_util <https://github.com/vroncevic/sh_util>`_
 
 Usage
 ------
@@ -107,3 +108,21 @@ Copyright (C) 2017 by `vroncevic.github.io/apmodule <https://vroncevic.github.io
 under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
 
+Lets help and support FSF.
+
+|Free Software Foundation|
+
+.. |Free Software Foundation| image:: https://raw.githubusercontent.com/vroncevic/apmodule/dev/docs/fsf-logo_1.png
+   :target: https://my.fsf.org/
+
+|Donate|
+
+.. |Donate| image:: https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif
+   :target: https://my.fsf.org/donate/
+
+Indices and tables
+------------------
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
