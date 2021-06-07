@@ -57,9 +57,11 @@ TOOL_NOTIFY="false"
 # @param  Value required project name
 # @retval Function __apmodule exit with integer value
 #            0   - tool finished with success operation
+#            127 - run tool script as root user from cli
 #            128 - missing argument(s) from cli
 #            129 - failed to load tool script configuration from files
 #            130 - missing external tool
+#
 #
 # @usage
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
@@ -105,8 +107,8 @@ function __apmodule {
         MSG="Generating Apache Module"
         info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
         eval "${APXS} -g -n ${PNAME}"
-        local USRID=${config_apmodule_util[UID]}
-        local GRPID=${config_apmodule_util[UID]}
+        local USERID=${config_apmodule_util[USERID]}
+        local GROUPID=${config_apmodule_util[GROUPID]}
         MSG="Set owner!"
         info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
         eval "chown -R ${USRID}.${GRPID} ${PNAME}/"
@@ -123,12 +125,7 @@ function __apmodule {
 #
 # @brief   Main entry point of script tool
 # @param   Value required project name
-# @exitval Script tool apmodule exit with integer value
-#            0   - tool finished with success operation
-#            127 - run tool script as root user from cli
-#            128 - missing argument(s) from cli
-#            129 - failed to load tool script configuration from files
-#            130 - missing external tool
+# @exitval Script tool apmodule exit with integer value 0 -130
 #
 printf "\n%s\n%s\n\n" "${APMODULE_TOOL} ${APMODULE_VERSION}" "`date`"
 check_root

@@ -1,3 +1,5 @@
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/apmodule/dev/docs/apmodule_logo.png" width="25%">
+
 # Generator for Template HTTP Apache Module
 
 **apmodule** is shell tool for generating **[Apache Module](https://httpd.apache.org/docs/2.4/mod/)**.
@@ -33,11 +35,11 @@ Navigate to release **[page](https://github.com/vroncevic/apmodule/releases)** d
 To install **apmodule** type the following:
 
 ```
-tar xvzf apmodule-x.y.z.tar.gz
-cd apmodule-x.y.z
-cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.1.0/
-cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.1.0/
-cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.1.0/
+tar xvzf apmodule-x.y.tar.gz
+cd apmodule-x.y
+cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.x.y/
+cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.x.y/
+cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.x.y/
 ```
 
 ![alt tag](https://raw.githubusercontent.com/vroncevic/apmodule/dev/docs/setup_tree.png)
@@ -50,7 +52,7 @@ Or You can use docker to create image/container.
 
 ```
 # Create symlink for apmodule
-ln -s /root/scripts/apmodule/ver.1.0/bin/apmodule.sh /root/bin/apmodule
+ln -s /root/scripts/apmodule/ver.x.y/bin/apmodule.sh /root/bin/apmodule
 
 # Setting PATH
 export PATH=${PATH}:/root/bin/
@@ -70,7 +72,7 @@ apmodule rcp
 
 Code structure:
 ```
-.
+sh_tool/
 ├── bin/
 │   └── apmodule.sh
 ├── conf/

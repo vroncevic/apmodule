@@ -41,11 +41,11 @@ To install **apmodule** type the following:
 
 .. code-block:: bash
 
-   tar xvzf apmodule-x.y.z.tar.gz
-   cd apmodule-x.y.z
-   cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.1.0/
-   cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.1.0/
-   cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.1.0/
+   tar xvzf apmodule-x.y.tar.gz
+   cd apmodule-x.y
+   cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.x.y/
+   cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.x.y/
+   cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.x.y/
 
 Or You can use Docker to create image/container.
 
@@ -67,7 +67,7 @@ Usage
 .. code-block:: bash
 
     # Create symlink for apmodule
-    ln -s /root/scripts/apmodule/ver.1.0/bin/apmodule.sh /root/bin/apmodule
+    ln -s /root/scripts/apmodule/ver.x.y/bin/apmodule.sh /root/bin/apmodule
     # Setting PATH
     export PATH=${PATH}:/root/bin/
     # Generate Apache Module rcp
@@ -82,7 +82,7 @@ Code structure:
 
 .. code-block:: bash
 
-   .
+   sh_tool/
    ├── bin/
    │   └── apmodule.sh
    ├── conf/

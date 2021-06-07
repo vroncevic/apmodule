@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>apmodule &mdash; apmodule https://github.com/vroncevic/apmodule/releases/tag/v1.0.0 documentation</title>
+  <title>apmodule &mdash; apmodule https://github.com/vroncevic/apmodule/releases/tag/v1.0 documentation</title>
   
 
   
@@ -57,6 +57,10 @@
 
           
             
+            
+              <div class="version">
+                1.0
+              </div>
             
           
 
@@ -163,11 +167,11 @@ other information that should be provided before the tool is installed.</p>
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
 <p>Navigate to release <a class="reference external" href="https://github.com/vroncevic/apmodule/releases">page</a> download and extract release archive.</p>
 <p>To install <strong>apmodule</strong> type the following:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar xvzf apmodule-x.y.z.tar.gz
-<span class="nb">cd</span> apmodule-x.y.z
-cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.1.0/
-cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.1.0/
-cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.1.0/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar xvzf apmodule-x.y.tar.gz
+<span class="nb">cd</span> apmodule-x.y
+cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.x.y/
+cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.x.y/
+cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.x.y/
 </pre></div>
 </div>
 <p>Or You can use Docker to create image/container.</p>
@@ -183,7 +187,7 @@ cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.1.0/
 <div class="section" id="usage">
 <h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create symlink for apmodule</span>
-ln -s /root/scripts/apmodule/ver.1.0/bin/apmodule.sh /root/bin/apmodule
+ln -s /root/scripts/apmodule/ver.x.y/bin/apmodule.sh /root/bin/apmodule
 <span class="c1"># Setting PATH</span>
 <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>:/root/bin/
 <span class="c1"># Generate Apache Module rcp</span>
@@ -195,7 +199,7 @@ apmodule rcp
 <h1>Shell tool structure<a class="headerlink" href="#shell-tool-structure" title="Permalink to this headline">¶</a></h1>
 <p><strong>apmodule</strong> is based on MOP.</p>
 <p>Code structure:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sh_tool/
 ├── bin/
 │   └── apmodule.sh
 ├── conf/
@@ -238,7 +242,7 @@ at your option, any later version of Bash 4 you may have available.</p>
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Vladimir Roncevic &lt;elektron.ronca@gmail.com&gt;
+        &copy; Copyright 2017, Vladimir Roncevic &lt;elektron.ronca@gmail.com&gt;
 
     </p>
   </div>
