@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generating Apache Module Project
-# @version ver.1.0.0
+# @version ver.1.0
 # @date    Wed Feb 22 09:15:40 CET 2017
 # @company None, free software to use 2017
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -57,7 +57,6 @@ TOOL_NOTIFY="false"
 # @param  Value required project name
 # @retval Function __apmodule exit with integer value
 #            0   - tool finished with success operation
-#            127 - run tool script as root user from cli
 #            128 - missing argument(s) from cli
 #            129 - failed to load tool script configuration from files
 #            130 - missing external tool
@@ -125,7 +124,12 @@ function __apmodule {
 #
 # @brief   Main entry point of script tool
 # @param   Value required project name
-# @exitval Script tool apmodule exit with integer value 0 -130
+# @exitval Script tool apmodule exit with integer value
+#            0   - tool finished with success operation
+#            127 - run tool script as root user from cli
+#            128 - missing argument(s) from cli
+#            129 - failed to load tool script configuration from files
+#            130 - missing external tool
 #
 printf "\n%s\n%s\n\n" "${APMODULE_TOOL} ${APMODULE_VERSION}" "`date`"
 check_root
