@@ -99,9 +99,9 @@ Sat 20 Nov 2021 05:12:56 PM CET
 	| (_| | |_) | | | | | | (_) | (_| | |_| | |  __/
 	 \__,_| .__/|_| |_| |_|\___/ \__,_|\__,_|_|\___|
 	      |_|                                       
-			Info   github.io/apmodule ver.2.0 
-			Issue  github.io/issue
-			Author vroncevic.github.io
+		Info   github.io/apmodule ver.2.0 
+		Issue  github.io/issue
+		Author vroncevic.github.io
 
 [apmodule] Loading basic and util configuration!
 100% [================================================]
