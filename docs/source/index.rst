@@ -33,11 +33,16 @@ other information that should be provided before the tool is installed.
 Installation
 -------------
 
+|Debian Linux OS|
+
+.. |Debian Linux OS| image:: https://raw.githubusercontent.com/vroncevic/apmodule/dev/docs/debtux.png
+   :target: https://www.debian.org
+
 Navigate to release `page`_ download and extract release archive.
 
 .. _page: https://github.com/vroncevic/apmodule/releases
 
-To install **apmodule** type the following:
+To install **apmodule** type the following
 
 .. code-block:: bash
 
@@ -57,37 +62,28 @@ Or You can use Docker to create image/container.
 Dependencies
 -------------
 
-**apmodule** requires next modules and libraries:
+**apmodule** requires next modules and libraries
 
 * sh_util `https://github.com/vroncevic/sh_util <https://github.com/vroncevic/sh_util>`_
-
-Usage
-------
-
-.. code-block:: bash
-
-    # Create symlink for apmodule
-    ln -s /root/scripts/apmodule/ver.x.y/bin/apmodule.sh /root/bin/apmodule
-    # Setting PATH
-    export PATH=${PATH}:/root/bin/
-    # Generate Apache Module rcp
-    apmodule rcp
 
 Shell tool structure
 ---------------------
 
 **apmodule** is based on MOP.
 
-Code structure:
+Shell tool structure
 
 .. code-block:: bash
 
    sh_tool/
    ├── bin/
-   │   └── apmodule.sh
+   │   ├── apmodule.sh
+   │   ├── center.sh
+   │   └── display_logo.sh
    ├── conf/
-   │   ├── apmodule.cfg
-   │   └── apmodule_util.cfg
+   │   ├── apmodule.cfg
+   │   ├── apmodule.logo
+   │   └── apmodule_util.cfg
    └── log/
        └── apmodule.log
 

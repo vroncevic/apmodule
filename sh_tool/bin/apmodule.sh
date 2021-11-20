@@ -1,9 +1,9 @@
 #!/bin/bash
 #
 # @brief   Generating Apache Module Project
-# @version ver.1.0
-# @date    Wed Feb 22 09:15:40 CET 2017
-# @company None, free software to use 2017
+# @version ver.2.0
+# @date    Sat Nov 20 11:40:40 CET 2021
+# @company None, free software to use 2021
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
 #
 UTIL_ROOT=/root/scripts
@@ -22,11 +22,18 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/progress_bar.sh
 
 APMODULE_TOOL=apmodule
-APMODULE_VERSION=ver.1.0
+APMODULE_VERSION=ver.2.0
 APMODULE_HOME=${UTIL_ROOT}/${APMODULE_TOOL}/${APMODULE_VERSION}
 APMODULE_CFG=${APMODULE_HOME}/conf/${APMODULE_TOOL}.cfg
 APMODULE_UTIL_CFG=${APMODULE_HOME}/conf/${APMODULE_TOOL}_util.cfg
+APMODULE_LOGO=${APMODULE_HOME}/conf/${APMODULE_TOOL}.logo
 APMODULE_LOG=${APMODULE_HOME}/log
+
+tabs 4
+CONSOLE_WIDTH=$(stty size | awk '{print $2}')
+
+.    ${APMODULE_HOME}/bin/center.sh
+.    ${APMODULE_HOME}/bin/display_logo.sh
 
 declare -A APMODULE_USAGE=(
     [USAGE_TOOL]="${APMODULE_TOOL}"
@@ -61,7 +68,6 @@ TOOL_NOTIFY="false"
 #            129 - failed to load tool script configuration from files
 #            130 - missing external tool
 #
-#
 # @usage
 # @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #
@@ -70,6 +76,7 @@ TOOL_NOTIFY="false"
 #
 function __apmodule {
     local PNAME=$1
+    display_logo
     if [ -n "${PNAME}" ]; then
         local FUNC=${FUNCNAME[0]} MSG="None"
         local STATUS_CONF STATUS_CONF_UTIL STATUS
@@ -139,4 +146,3 @@ if [ $STATUS -eq $SUCCESS ]; then
 fi
 
 exit 127
-
