@@ -56,7 +56,7 @@ Self generated setup script and execution
 [setup] create symbolic link of App/Tool/Script
 [setup] done
 
-/root/scripts/apmodule/ver.1.0/
+/root/scripts/apmodule/ver.2.0/
 ├── bin/
 │   ├── apmodule.sh
 │   ├── center.sh
