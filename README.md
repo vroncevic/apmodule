@@ -69,7 +69,7 @@ Self generated setup script and execution
     └── apmodule.log
 
 3 directories, 7 files
-lrwxrwxrwx 1 root root 46 Nov 21 12:01 /root/bin/apmodule -> /root/scripts/apmodule/ver.1.0/bin/apmodule.sh
+lrwxrwxrwx 1 root root 46 Nov 21 12:01 /root/bin/apmodule -> /root/scripts/apmodule/ver.4.0/bin/apmodule.sh
 ```
 
 Or You can use docker to create image/container.
