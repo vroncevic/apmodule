@@ -56,7 +56,7 @@ Self generated setup script and execution
 [setup] create symbolic link of App/Tool/Script
 [setup] done
 
-/root/scripts/apmodule/ver.2.0/
+/root/scripts/apmodule/ver.3.0/
 ├── bin/
 │   ├── apmodule.sh
 │   ├── center.sh
@@ -99,7 +99,7 @@ Sat 20 Nov 2021 05:12:56 PM CET
 	| (_| | |_) | | | | | | (_) | (_| | |_| | |  __/
 	 \__,_| .__/|_| |_| |_|\___/ \__,_|\__,_|_|\___|
 	      |_|                                       
-		Info   github.io/apmodule ver.2.0 
+		Info   github.io/apmodule ver.3.0 
 		Issue  github.io/issue
 		Author vroncevic.github.io
 
@@ -107,13 +107,13 @@ Sat 20 Nov 2021 05:12:56 PM CET
 100% [================================================]
 
 [load_conf] Loading App/Tool/Script configuration!
-[check_cfg] Checking configuration file [/root/scripts/apmodule/ver.2.0/conf/apmodule.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/apmodule/ver.3.0/conf/apmodule.cfg] [ok]
 [check_cfg] Done
 
 [load_conf] Done
 
 [load_util_conf] Load module configuration!
-[check_cfg] Checking configuration file [/root/scripts/apmodule/ver.2.0/conf/apmodule_util.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/apmodule/ver.3.0/conf/apmodule_util.cfg] [ok]
 [check_cfg] Done
 
 [load_util_conf] Done

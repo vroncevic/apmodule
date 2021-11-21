@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generating Apache Module Project
-# @version ver.2.0
+# @version ver.3.0
 # @date    Sat Nov 20 11:40:40 CET 2021
 # @company None, free software to use 2021
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -22,7 +22,7 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/progress_bar.sh
 
 APMODULE_TOOL=apmodule
-APMODULE_VERSION=ver.2.0
+APMODULE_VERSION=ver.3.0
 APMODULE_HOME=${UTIL_ROOT}/${APMODULE_TOOL}/${APMODULE_VERSION}
 APMODULE_CFG=${APMODULE_HOME}/conf/${APMODULE_TOOL}.cfg
 APMODULE_UTIL_CFG=${APMODULE_HOME}/conf/${APMODULE_TOOL}_util.cfg
