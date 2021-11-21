@@ -88,8 +88,8 @@ export PATH=${PATH}:/root/bin/
 # Generate Apache Module rcp
 apmodule rcp
                                                                                                     
-apmodule ver.2.0
-Sat 20 Nov 2021 05:12:56 PM CET
+apmodule ver.3.0
+Sun 21 Nov 2021 09:41:28 AM CET
 
 [check_root] Check permission for current session? [ok]
 [check_root] Done
