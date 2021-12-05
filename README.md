@@ -134,7 +134,7 @@ Creating [FILE] rcp/.deps
 
 ### Dependencies
 
-**apmodule** requires next modules and libraries:
+**apmodule** requires next modules and libraries
 * sh_util [https://github.com/vroncevic/sh_util](https://github.com/vroncevic/sh_util)
 
 ### Shell tool structure
@@ -160,7 +160,7 @@ sh_tool/
 
 [![Documentation Status](https://readthedocs.org/projects/apmodule/badge/?version=latest)](https://apmodule.readthedocs.io/projects/apmodule/en/latest/?badge=latest)
 
-More documentation and info at:
+More documentation and info at
 * [https://apmodule.readthedocs.io/en/latest/](https://apmodule.readthedocs.io/en/latest/)
 * [https://www.gnu.org/software/bash/manual/](https://www.gnu.org/software/bash/manual/)
 * [https://httpd.apache.org/docs/2.4/developer/modguide.html](https://httpd.apache.org/docs/2.4/developer/modguide.html)
