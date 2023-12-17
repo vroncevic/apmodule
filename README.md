@@ -6,7 +6,7 @@
 
 Developed in **[bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell))** code: **100%**.
 
-[![apmodule shell checker](https://github.com/vroncevic/apmodule/workflows/apmodule%20shell%20checker/badge.svg)](https://github.com/vroncevic/apmodule/actions?query=workflow%3A%22apmodule+shell+checker%22)
+[![apmodule_shell_checker](https://github.com/vroncevic/apmodule/actions/workflows/apmodule_shell_checker.yml/badge.svg)](https://github.com/vroncevic/apmodule/actions/workflows/apmodule_shell_checker.yml)
 
 The README is used to introduce the tool and provide instructions on
 how to install the tool, any machine dependencies it may have and any
@@ -74,8 +74,6 @@ lrwxrwxrwx 1 root root 46 Nov 21 12:01 /root/bin/apmodule -> /root/scripts/apmod
 
 Or You can use docker to create image/container.
 
-[![apmodule docker checker](https://github.com/vroncevic/apmodule/workflows/apmodule%20docker%20checker/badge.svg)](https://github.com/vroncevic/apmodule/actions?query=workflow%3A%22apmodule+docker+checker%22)
-
 ### Usage
 
 ```
@@ -93,12 +91,16 @@ Sun 21 Nov 2021 12:01:58 PM CET
 
 [check_root] Check permission for current session? [ok]
 [check_root] Done
-	                                 _       _      
-	  __ _ _ __  _ __ ___   ___   __| |_   _| | ___ 
-	 / _` | '_ \| '_ ` _ \ / _ \ / _` | | | | |/ _ \
-	| (_| | |_) | | | | | | (_) | (_| | |_| | |  __/
-	 \__,_| .__/|_| |_| |_|\___/ \__,_|\__,_|_|\___|
-	      |_|                                       
+                                                                       
+                                               ██          ██          
+                                              ░██         ░██          
+    ██████   ██████  ██████████   ██████      ░██ ██   ██ ░██  █████   
+   ░░░░░░██ ░██░░░██░░██░░██░░██ ██░░░░██  ██████░██  ░██ ░██ ██░░░██  
+    ███████ ░██  ░██ ░██ ░██ ░██░██   ░██ ██░░░██░██  ░██ ░██░███████  
+   ██░░░░██ ░██████  ░██ ░██ ░██░██   ░██░██  ░██░██  ░██ ░██░██░░░░   
+  ░░████████░██░░░   ███ ░██ ░██░░██████ ░░██████░░██████ ███░░██████  
+   ░░░░░░░░ ░██     ░░░  ░░  ░░  ░░░░░░   ░░░░░░  ░░░░░░ ░░░  ░░░░░░   
+            ░░                                                         
 		Info   github.io/apmodule ver.4.0 
 		Issue  github.io/issue
 		Author vroncevic.github.io
@@ -169,7 +171,7 @@ More documentation and info at
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Copyright (C) 2017 by [vroncevic.github.io/apmodule](https://vroncevic.github.io/apmodule)
+Copyright (C) 2017 - 2024 by [vroncevic.github.io/apmodule](https://vroncevic.github.io/apmodule)
 
 **apmodule** is free software; you can redistribute it and/or modify
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
