@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# @brief   Generating Apache Module Project
+# @brief   Generate Apache Module Project
 # @version ver.4.0
 # @date    Sat Nov 20 11:40:40 CET 2021
 # @company None, free software to use 2021
@@ -60,7 +60,7 @@ TOOL_LOG="false"
 TOOL_NOTIFY="false"
 
 #
-# @brief  Generating Apache Module Project
+# @brief  Generate Apache Module Project
 # @param  Value required project name
 # @retval Function __apmodule exit with integer value
 #            0   - tool finished with success operation
