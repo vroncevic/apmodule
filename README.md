@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.githubusercontent.com/vroncevic/apmodule/dev/docs/apmodule_logo.png" width="25%">
-
 # Generator for Template HTTP Apache Module
+
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/apmodule/dev/docs/apmodule_logo.png" width="25%">
 
 **apmodule** is shell tool for generating **[Apache Module](https://httpd.apache.org/docs/2.4/mod/)**.
 
@@ -35,7 +35,8 @@ other information that should be provided before the tool is installed.
 Navigate to release **[page](https://github.com/vroncevic/apmodule/releases)** download and extract release archive.
 
 To install **apmodule** type the following
-```
+
+```bash
 tar xvzf apmodule-x.y.tar.gz
 cd apmodule-x.y
 cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.x.y/
@@ -44,7 +45,8 @@ cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.x.y/
 ```
 
 Self generated setup script and execution
-```
+
+```bash
 ./apmodule_setup.sh 
 
 [setup] installing App/Tool/Script apmodule
@@ -76,7 +78,7 @@ Or You can use docker to create image/container.
 
 ### Usage
 
-```
+```bash
 # Create symlink for apmodule
 ln -s /root/scripts/apmodule/ver.x.y/bin/apmodule.sh /root/bin/apmodule
 
@@ -144,7 +146,8 @@ Creating [FILE] rcp/.deps
 **apmodule** is based on MOP.
 
 Shell tool structure
-```
+
+```bash
 sh_tool/
 ├── bin/
 │   ├── apmodule.sh
