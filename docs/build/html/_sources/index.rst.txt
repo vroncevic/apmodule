@@ -46,11 +46,11 @@ To install **apmodule** type the following
 
 .. code-block:: bash
 
-   tar xvzf apmodule-x.y.tar.gz
-   cd apmodule-x.y
-   cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.x.y/
-   cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.x.y/
-   cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.x.y/
+    tar xvzf apmodule-5.0.tar.gz
+    cd apmodule-5.0/
+    cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.5.0/
+    cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.5.0/
+    cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.5.0/
 
 Or You can use Docker to create image/container.
 
@@ -70,17 +70,15 @@ Shell tool structure
 
 .. code-block:: bash
 
-   sh_tool/
-   ├── bin/
-   │   ├── apmodule.sh
-   │   ├── center.sh
-   │   └── display_logo.sh
-   ├── conf/
-   │   ├── apmodule.cfg
-   │   ├── apmodule.logo
-   │   └── apmodule_util.cfg
-   └── log/
-       └── apmodule.log
+    sh_tool/
+    ├── bin/
+    │   └── apmodule.sh
+    ├── conf/
+    │   ├── apmodule.cfg
+    │   ├── apmodule.logo
+    │   └── apmodule_util.cfg
+    └── log/
+        └── apmodule.log
 
 Copyright and licence
 ----------------------
@@ -93,7 +91,7 @@ Copyright and licence
 .. |License: Apache 2.0| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
    :target: https://opensource.org/licenses/Apache-2.0
 
-Copyright (C) 2017 - 2024 by `vroncevic.github.io/apmodule <https://vroncevic.github.io/apmodule>`_
+Copyright (C) 2017 - 2026 by `vroncevic.github.io/apmodule <https://vroncevic.github.io/apmodule>`_
 
 **apmodule** is free software; you can redistribute it and/or modify it
 under the same terms as Bash itself, either Bash version 4.2.47 or,
