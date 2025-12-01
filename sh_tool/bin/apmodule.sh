@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generate Apache Module Project
-# @version ver.4.0
+# @version ver.5.0
 # @date    Sat Nov 20 11:40:40 CET 2021
 # @company None, free software to use 2021
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -20,20 +20,15 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/load_conf.sh
 .    ${UTIL}/bin/load_util_conf.sh
 .    ${UTIL}/bin/progress_bar.sh
+.    ${UTIL}/bin/display_logo.sh
 
 APMODULE_TOOL=apmodule
-APMODULE_VERSION=ver.4.0
+APMODULE_VERSION=ver.5.0
 APMODULE_HOME=${UTIL_ROOT}/${APMODULE_TOOL}/${APMODULE_VERSION}
 APMODULE_CFG=${APMODULE_HOME}/conf/${APMODULE_TOOL}.cfg
 APMODULE_UTIL_CFG=${APMODULE_HOME}/conf/${APMODULE_TOOL}_util.cfg
 APMODULE_LOGO=${APMODULE_HOME}/conf/${APMODULE_TOOL}.logo
 APMODULE_LOG=${APMODULE_HOME}/log
-
-tabs 4
-CONSOLE_WIDTH=$(stty size | awk '{print $2}')
-
-.    ${APMODULE_HOME}/bin/center.sh
-.    ${APMODULE_HOME}/bin/display_logo.sh
 
 declare -A APMODULE_USAGE=(
     [USAGE_TOOL]="${APMODULE_TOOL}"
@@ -76,8 +71,8 @@ TOOL_NOTIFY="false"
 #
 function __apmodule {
     local PNAME=$1
-    display_logo
     if [ -n "${PNAME}" ]; then
+        display_logo "vroncevic" "${APMODULE_TOOL}" "${APMODULE_VERSION}" "${APMODULE_LOGO}"
         local FUNC=${FUNCNAME[0]} MSG="None"
         local STATUS_CONF STATUS_CONF_UTIL STATUS
         MSG="Loading basic and util configuration!"
@@ -117,7 +112,7 @@ function __apmodule {
         local GROUPID=${config_apmodule_util[GROUPID]}
         MSG="Set owner!"
         info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
-        eval "chown -R ${USRID}.${GRPID} ${PNAME}/"
+        eval "chown -R ${USRID}:${GRPID} ${PNAME}/"
         MSG="Set permission!"
         info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
         eval "chmod -R 700 ${PNAME}/"
