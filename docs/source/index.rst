@@ -46,11 +46,11 @@ To install **apmodule** type the following
 
 .. code-block:: bash
 
-    tar xvzf apmodule-5.0.tar.gz
-    cd apmodule-5.0/
-    cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.5.0/
-    cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.5.0/
-    cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.5.0/
+    tar xvzf apmodule-6.0.tar.gz
+    cd apmodule-6.0/
+    cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.6.0/
+    cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.6.0/
+    cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.6.0/
 
 Or You can use Docker to create image/container.
 
