@@ -37,11 +37,11 @@ Navigate to release **[page](https://github.com/vroncevic/apmodule/releases)** d
 To install **apmodule** type the following
 
 ```bash
-tar xvzf apmodule-5.0.tar.gz
-cd apmodule-5.0/
-cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.5.0/
-cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.5.0/
-cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.5.0/
+tar xvzf apmodule-6.0.tar.gz
+cd apmodule-6.0/
+cp -R ~/sh_tool/bin/   /root/scripts/apmodule/ver.6.0/
+cp -R ~/sh_tool/conf/  /root/scripts/apmodule/ver.6.0/
+cp -R ~/sh_tool/log/   /root/scripts/apmodule/ver.6.0/
 ```
 
 Self generated setup script and execution
@@ -58,7 +58,7 @@ Self generated setup script and execution
 [setup] create symbolic link of App/Tool/Script
 [setup] done
 
-/root/scripts/apmodule/ver.5.0/
+/root/scripts/apmodule/ver.6.0/
 ├── bin/
 │   └── apmodule.sh
 ├── conf/
@@ -69,7 +69,7 @@ Self generated setup script and execution
     └── apmodule.log
 
 4 directories, 5 files
-lrwxrwxrwx 1 root root 46 Dec  1 19:03 /root/bin/apmodule -> /root/scripts/apmodule/ver.5.0/bin/apmodule.sh
+lrwxrwxrwx 1 root root 46 Dec  1 19:03 /root/bin/apmodule -> /root/scripts/apmodule/ver.6.0/bin/apmodule.sh
 ```
 
 Or You can use docker to create image/container.
@@ -78,7 +78,7 @@ Or You can use docker to create image/container.
 
 ```bash
 # Create symlink for apmodule
-ln -s /root/scripts/apmodule/ver.5.0/bin/apmodule.sh /root/bin/apmodule
+ln -s /root/scripts/apmodule/ver.6.0/bin/apmodule.sh /root/bin/apmodule
 
 # Setting PATH
 export PATH=${PATH}:/root/bin/
@@ -86,7 +86,7 @@ export PATH=${PATH}:/root/bin/
 # Generate Apache Module rcp
 apmodule rcp
                                                                                                     
-apmodule ver.5.0
+apmodule ver.6.0
 Mon Dec  1 07:43:22 PM CET 2025
 
 [check_root] Check permission for current session? [ok]
@@ -101,7 +101,7 @@ Mon Dec  1 07:43:22 PM CET 2025
   ░░████████░██░░░   ███ ░██ ░██░░██████ ░░██████░░██████ ███░░██████  
    ░░░░░░░░ ░██     ░░░  ░░  ░░  ░░░░░░   ░░░░░░  ░░░░░░ ░░░  ░░░░░░   
             ░░                                                         
-		Info   github.io/apmodule ver.5.0 
+		Info   github.io/apmodule ver.6.0 
 		Issue  github.io/issue
 		Author vroncevic.github.io
 
@@ -109,13 +109,13 @@ Mon Dec  1 07:43:22 PM CET 2025
 100% [================================================]
 
 [load_conf] Loading App/Tool/Script configuration!
-[check_cfg] Checking configuration file [/root/scripts/apmodule/ver.5.0/conf/apmodule.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/apmodule/ver.6.0/conf/apmodule.cfg] [ok]
 [check_cfg] Done
 
 [load_conf] Done
 
 [load_util_conf] Load module configuration!
-[check_cfg] Checking configuration file [/root/scripts/apmodule/ver.5.0/conf/apmodule_util.cfg] [ok]
+[check_cfg] Checking configuration file [/root/scripts/apmodule/ver.6.0/conf/apmodule_util.cfg] [ok]
 [check_cfg] Done
 
 [load_util_conf] Done

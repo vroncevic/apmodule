@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generate Apache Module Project
-# @version ver.5.0
+# @version ver.6.0
 # @date    Sat Nov 20 11:40:40 CET 2021
 # @company None, free software to use 2021
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -11,8 +11,6 @@ UTIL_VERSION=ver.1.0
 UTIL=${UTIL_ROOT}/sh_util/${UTIL_VERSION}
 UTIL_LOG=${UTIL}/log
 
-.    ${UTIL}/bin/devel.sh
-.    ${UTIL}/bin/usage.sh
 .    ${UTIL}/bin/check_root.sh
 .    ${UTIL}/bin/check_tool.sh
 .    ${UTIL}/bin/logging.sh
@@ -23,7 +21,7 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/display_logo.sh
 
 APMODULE_TOOL=apmodule
-APMODULE_VERSION=ver.5.0
+APMODULE_VERSION=ver.6.0
 APMODULE_HOME=${UTIL_ROOT}/${APMODULE_TOOL}/${APMODULE_VERSION}
 APMODULE_CFG=${APMODULE_HOME}/conf/${APMODULE_TOOL}.cfg
 APMODULE_UTIL_CFG=${APMODULE_HOME}/conf/${APMODULE_TOOL}_util.cfg
@@ -50,6 +48,13 @@ declare -A PB_STRUCTURE=(
     [SLEEP]=0.01
 )
 
+declare -A APMODULE_LOGO_DATA=(
+    [OWNER]="vroncevic"
+    [REPO]="${APMODULE_TOOL}"
+    [VERSION]="${APMODULE_VERSION}"
+    [LOGO]="${APMODULE_LOGO}"
+)
+
 TOOL_DEBUG="false"
 TOOL_LOG="false"
 TOOL_NOTIFY="false"
@@ -71,56 +76,56 @@ TOOL_NOTIFY="false"
 #
 function __apmodule {
     local PNAME=$1
-    if [ -n "${PNAME}" ]; then
-        display_logo "vroncevic" "${APMODULE_TOOL}" "${APMODULE_VERSION}" "${APMODULE_LOGO}"
-        local FUNC=${FUNCNAME[0]} MSG="None"
-        local STATUS_CONF STATUS_CONF_UTIL STATUS
-        MSG="Loading basic and util configuration!"
-        info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
-        progress_bar PB_STRUCTURE
-        declare -A config_apmodule=()
-        load_conf "$APMODULE_CFG" config_apmodule
-        STATUS_CONF=$?
-        declare -A config_apmodule_util=()
-        load_util_conf "$APMODULE_UTIL_CFG" config_apmodule_util
-        STATUS_CONF_UTIL=$?
-        declare -A STATUS_STRUCTURE=(
-            [1]=$STATUS_CONF [2]=$STATUS_CONF_UTIL
-        )
-        check_status STATUS_STRUCTURE
-        STATUS=$?
-        if [ $STATUS -eq $NOT_SUCCESS ]; then
-            MSG="Force exit!"
-            info_debug_message_end "$MSG" "$FUNC" "$APMODULE_TOOL"
-            exit 129
-        fi
-        TOOL_DEBUG=${config_apmodule[DEBUGGING]}
-        TOOL_LOG=${config_apmodule[LOGGING]}
-        TOOL_NOTIFY=${config_apmodule[EMAILING]}
-        APXS=${config_apmodule_util[APXS]}
-        check_tool "${APXS}"
-        STATUS=$?
-        if [ $STATUS -eq $NOT_SUCCESS ]; then
-            MSG="Force exit!"
-            info_debug_message_end "$MSG" "$FUNC" "$APMODULE_TOOL"
-            exit 130
-        fi
-        MSG="Generating Apache Module"
-        info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
-        eval "${APXS} -g -n ${PNAME}"
-        local USERID=${config_apmodule_util[USERID]}
-        local GROUPID=${config_apmodule_util[GROUPID]}
-        MSG="Set owner!"
-        info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
-        eval "chown -R ${USRID}:${GRPID} ${PNAME}/"
-        MSG="Set permission!"
-        info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
-        eval "chmod -R 700 ${PNAME}/"
-        info_debug_message_end "Done" "$FUNC" "$APMODULE_TOOL"
-        exit 0
+    if [ -z "${PNAME}" ]; then
+        usage APMODULE_USAGE
+        exit 128
     fi
-    usage APMODULE_USAGE
-    exit 128
+    display_logo APMODULE_LOGO_DATA
+    local FUNC=${FUNCNAME[0]} MSG="None"
+    local STATUS_CONF STATUS_CONF_UTIL STATUS
+    MSG="Loading basic and util configuration!"
+    info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
+    progress_bar PB_STRUCTURE
+    declare -A config_apmodule=()
+    load_conf "$APMODULE_CFG" config_apmodule
+    STATUS_CONF=$?
+    declare -A config_apmodule_util=()
+    load_util_conf "$APMODULE_UTIL_CFG" config_apmodule_util
+    STATUS_CONF_UTIL=$?
+    declare -A STATUS_STRUCTURE=(
+        [1]=$STATUS_CONF [2]=$STATUS_CONF_UTIL
+    )
+    check_status STATUS_STRUCTURE
+    STATUS=$?
+    if [ $STATUS -eq $NOT_SUCCESS ]; then
+        MSG="Force exit!"
+        info_debug_message_end "$MSG" "$FUNC" "$APMODULE_TOOL"
+        exit 129
+    fi
+    TOOL_DEBUG=${config_apmodule[DEBUGGING]}
+    TOOL_LOG=${config_apmodule[LOGGING]}
+    TOOL_NOTIFY=${config_apmodule[EMAILING]}
+    APXS=${config_apmodule_util[APXS]}
+    check_tool "${APXS}"
+    STATUS=$?
+    if [ $STATUS -eq $NOT_SUCCESS ]; then
+        MSG="Force exit!"
+        info_debug_message_end "$MSG" "$FUNC" "$APMODULE_TOOL"
+        exit 130
+    fi
+    MSG="Generating Apache Module"
+    info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
+    eval "${APXS} -g -n ${PNAME}"
+    local USERID=${config_apmodule_util[USERID]}
+    local GROUPID=${config_apmodule_util[GROUPID]}
+    MSG="Set owner!"
+    info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
+    eval "chown -R ${USRID}:${GRPID} ${PNAME}/"
+    MSG="Set permission!"
+    info_debug_message "$MSG" "$FUNC" "$APMODULE_TOOL"
+    eval "chmod -R 700 ${PNAME}/"
+    info_debug_message_end "Done" "$FUNC" "$APMODULE_TOOL"
+    exit 0
 }
 
 #
